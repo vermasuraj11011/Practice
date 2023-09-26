@@ -1,6 +1,7 @@
 package com.specification.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -9,6 +10,7 @@ import java.util.List;
 @Entity
 @Data
 @Table(name = "users")
+@AllArgsConstructor
 public class User {
 
     @Id
