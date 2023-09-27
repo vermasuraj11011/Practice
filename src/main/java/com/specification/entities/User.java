@@ -3,6 +3,7 @@ package com.specification.entities;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 @Data
 @Table(name = "users")
 @AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     @Id
@@ -27,5 +29,4 @@ public class User {
     @JsonIgnore
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Product> products;
-
 }

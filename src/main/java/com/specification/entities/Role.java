@@ -3,6 +3,7 @@ package com.specification.entities;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
@@ -10,6 +11,7 @@ import javax.persistence.*;
 @Data
 @Table(name = "role")
 @AllArgsConstructor
+@NoArgsConstructor
 public class Role {
 
     @Id

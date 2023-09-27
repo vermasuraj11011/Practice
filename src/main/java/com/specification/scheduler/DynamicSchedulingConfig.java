@@ -16,7 +16,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 @Configuration
-@EnableScheduling
+//@EnableScheduling
 public class DynamicSchedulingConfig implements SchedulingConfigurer {
 
     @Autowired
